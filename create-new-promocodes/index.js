@@ -14,7 +14,8 @@ module.exports = async function (context, req) {
             createdDate: todaysDate,
             validOnLocation: eventLocation,
             active: true,
-            validRangeinKms: 5
+            validRangeinKms: 5,
+            discountAmount: 100
         })
     }
     axios.post(`https://promocode-api-73b8c-default-rtdb.firebaseio.com/promoCodes.json`, generatedCoupons)
